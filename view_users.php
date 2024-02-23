@@ -20,7 +20,6 @@ $resultUsers = $db->query($queryUsers);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Users</title>
-    <!-- Add your stylesheets and other head elements here -->
     <style>
         body {
             font-family: Arial, sans-serif;

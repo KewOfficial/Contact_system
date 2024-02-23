@@ -47,7 +47,7 @@ if ($result_contact && $result_contact->num_rows > 0) {
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         margin-top: 20px;
-        overflow: hidden; /* Prevent content overflow */
+        overflow: hidden; 
     }
 
     h2 {

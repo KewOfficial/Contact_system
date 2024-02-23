@@ -1,9 +1,8 @@
 <?php
 session_start();
 
-// Check if the user is not logged in
+// Checking if the user is not logged in
 if (!isset($_SESSION["user_id"])) {
-    // Redirect to the login page or handle the case where the user is not logged in
     header("Location: login.php");
     exit();
 }
@@ -15,7 +14,6 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-// Function to check if a friend request exists
 function requestExists($db, $user1, $user2)
 {
     $query = "SELECT * FROM friends
@@ -27,7 +25,6 @@ function requestExists($db, $user1, $user2)
     return ($result && $result->num_rows > 0);
 }
 
-// Function to accept a friend request
 function acceptRequest($db, $user1, $user2)
 {
     $query = "UPDATE friends SET status = 'accepted'
@@ -38,20 +35,19 @@ function acceptRequest($db, $user1, $user2)
     return ($result !== false);
 }
 
-// Handle accept friend request form submission
+// Handling accept friend request form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["accept_request"])) {
     $friendUsername = htmlspecialchars(trim($_POST["friend_username"]));
 
-    // Get friend's user ID
+    // Getting  friend's user ID
     $queryFriendId = "SELECT id FROM users WHERE username = '$friendUsername'";
     $resultFriendId = $db->query($queryFriendId);
 
     if ($resultFriendId && $resultFriendId->num_rows > 0) {
         $friendId = $resultFriendId->fetch_assoc()['id'];
 
-        // Check if a friend request exists
+        // Checking if a friend request exists
         if (requestExists($db, $_SESSION['user_id'], $friendId)) {
-            // Accept friend request
             if (acceptRequest($db, $_SESSION['user_id'], $friendId)) {
                 echo "Friend request accepted successfully.";
             } else {
@@ -170,11 +166,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["accept_request"])) {
 
 <body>
     <header>
-        <!-- Add your header content here -->
+       
     </header>
 
     <nav>
-        <!-- Add your navigation content here -->
+       
     </nav>
 
     <main>

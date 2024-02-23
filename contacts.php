@@ -23,8 +23,6 @@ function sanitize_input($input)
     global $db;
     return htmlspecialchars(stripslashes(trim($db->real_escape_string($input))));
 }
-
-// Add new contact function
 function addNewContact($db, $userId, $name, $contactNumber, $email)
 {
     $queryAddContact = "INSERT INTO contacts (user_id, name, contact_number, email) VALUES ($userId, '$name', '$contactNumber', '$email')";
@@ -337,7 +335,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["share_contact"])) {
 
         <!-- Display Shared Contacts -->
         <?php
-        // Fetch and display shared contacts
         displaySharedContacts($db, $_SESSION['user_id']);
         ?>
     </main>

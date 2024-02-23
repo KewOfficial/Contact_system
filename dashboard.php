@@ -420,7 +420,7 @@ $username = getUsername($db, $_SESSION['user_id']);
 
 
     <main>
-        <!-- Your main content goes here -->
+       
     </main>
 </body>
 
