@@ -64,8 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #2c3e50; /* Background color */
-            color: #ecf0f1; /* Text color */
+            background-color: #2c3e50; 
+            color: #ecf0f1; 
             margin: 0;
             display: flex;
             justify-content: center;
@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         form {
             max-width: 400px;
             margin: auto;
-            background-color: #34495e; /* Form background color */
+            background-color: #34495e; 
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         h2 {
             text-align: center;
-            color: #ecf0f1; /* Heading color */
+            color: #ecf0f1;
             margin-bottom: 30px;
             font-size: 28px;
         }
@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         label {
             display: block;
             margin-bottom: 8px;
-            color: #bdc3c7; /* Label color */
+            color: #bdc3c7; 
             font-size: 16px;
             font-weight: bold;
         }
@@ -106,12 +106,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             border: 1px solid #bdc3c7;
             border-radius: 6px;
             font-size: 16px;
-            background-color: #ecf0f1; /* Input background color */
-            color: #2c3e50; /* Input text color */
+            background-color: #ecf0f1;
+            color: #2c3e50; 
         }
 
         input[type="submit"] {
-            background-color: #27ae60; /* Submit button color */
+            background-color: #27ae60; 
             color: #ecf0f1;
             cursor: pointer;
             font-size: 18px;
@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         input[type="submit"]:hover {
-            background-color: #219a52; /* Submit button hover color */
+            background-color: #219a52;
         }
     </style>
 </head>

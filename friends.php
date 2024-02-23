@@ -27,7 +27,7 @@ $result_friends = $db->query($query_friends);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
-    <!-- CSS styles here if needed -->
+    <!-- CSS styles  -->
     <style>
         body {
             font-family: Arial, sans-serif;

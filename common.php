@@ -101,5 +101,4 @@ if (!function_exists('displaySharedContacts')) {
     }
 }
 
-// Add more functions and configurations as needed
 ?>

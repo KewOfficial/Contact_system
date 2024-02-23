@@ -22,7 +22,7 @@ $resultDeleteSharedContacts = $db->query($queryDeleteSharedContacts);
 
 // Check for success before deleting the contact
 if ($resultDeleteSharedContacts) {
-    // Proceed with deleting the contact from the contacts table
+    
     $queryDeleteContact = "DELETE FROM contacts WHERE id = $contactId";
     $resultDeleteContact = $db->query($queryDeleteContact);
 

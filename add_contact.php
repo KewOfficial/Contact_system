@@ -1,10 +1,8 @@
 <?php
 session_start();
 
-// Include common functions and database connection
 require_once 'common.php';
 
-// Redirect to login page if the user is not logged in
 if (!isset($_SESSION["user_id"])) {
     header("Location: login.php");
     exit();
@@ -24,7 +22,6 @@ function sanitize_input($input)
     return htmlspecialchars(stripslashes(trim($db->real_escape_string($input))));
 }
 
-// Add new contact function
 function addNewContact($db, $userId, $name, $contactNumber, $email)
 {
     $queryAddContact = "INSERT INTO contacts (user_id, name, contact_number, email) VALUES ($userId, '$name', '$contactNumber', '$email')";
@@ -125,7 +122,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["add_contact"])) {
     <main>
         <h2>Fill in the details to add a new contact:</h2>
 
-        <!-- Add New Contact Form -->
         <form method="post" action="add_contact.php">
             <label for="name">Name:</label>
             <input type="text" name="name" required>

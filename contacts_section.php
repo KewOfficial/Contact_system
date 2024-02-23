@@ -1,5 +1,4 @@
 <?php
-// Start the session
 session_start();
 
 // Check if the user is not logged in
@@ -101,7 +100,7 @@ function saveToContactsSection($db, $userId, $contactId)
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            overflow: hidden; /* Prevent content overflow */
+            overflow: hidden;
         }
 
         h2 {
@@ -155,7 +154,7 @@ function saveToContactsSection($db, $userId, $contactId)
                     <th>ID</th>
                     <th>Name</th>
                     <th>Contact Number</th>
-                    <th>Actions</th> <!-- New column for actions -->
+                    <th>Actions</th> 
                 </tr>
 
                 <?php

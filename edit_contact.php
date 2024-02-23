@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["edit_contact"])) {
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            overflow: hidden; /* Prevent content overflow */
+            overflow: hidden; 
         }
 
         h2 {

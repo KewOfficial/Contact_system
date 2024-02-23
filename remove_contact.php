@@ -35,7 +35,6 @@ if ($contact_id !== null) {
         echo "Contact removed successfully.";
     } else {
         echo "Failed to remove contact. Please try again.";
-        // Check for MySQL errors
         echo "MySQL Error: " . $db->error;
     }
 } else {

@@ -24,7 +24,7 @@ $result = $db->query($query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inbox</title>
-    <!-- Add your CSS styles here -->
+    <!-- CSS styles here -->
     <style>
         body {
             font-family: Arial, sans-serif;

@@ -50,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["receiver"])) {
         $notification = "User not found.";
     }
 
-    // Redirect back to users.php with notification
     header("Location: users.php?notification=$notification");
     exit();
 } else {
